@@ -1,0 +1,90 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=0.67in]{geometry}
+\usepackage{booktabs,amsmath,microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\titleformat{\section}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\pagestyle{empty}
+\begin{document}
+\begin{center}
+{\large\bfseries Probing Clinical Meaning in Pretrained Language Representations:\\
+Negation, Uncertainty, and Terminology Generalization}\\[3pt]
+{\small CSI 436/536 Project P \quad Midterm Report \quad October 20, 2026}\\
+{\small Group ID: \textbf{8} \quad Members: \textbf{Yuhan Sun, Zeyu Pan, Jiayu Liao}}
+\end{center}
+\vspace{-6pt}
+\section{Problem Statement}
+We investigate whether frozen pretrained representations preserve useful information
+about negation and uncertainty, improve learning with limited labeled training data,
+and eventually support terminology generalization. The implemented pilot predicts
+\emph{sentence-level annotated cue presence} in BioScope abstracts [1]:
+\texttt{no\_cue}, \texttt{negation\_only}, or \texttt{speculation\_only}.
+These labels do not establish a particular patient's disease status. Target-specific
+assertion and unseen-disease evaluation require additional entity-level labels.
+\section{Data and Proposed Method}
+We downloaded the official BioScope XML and parsed 11,871 sentences from 1,273 abstracts,
+including titles. Removing 295 mixed-cue sentences and 17 redundant duplicates leaves
+11,559 sentences. Documents connected by duplicate sentences stay in one partition.
+Five fixed stratified group folds allocate three folds to training, one to validation,
+and one to test. The pilot samples 1,500/400/600 sentences within those partitions,
+approximately preserving class proportions. The test contains 439 no-cue, 68 negation,
+and 93 speculation sentences.
+
+We compare word unigram/bigram TF-IDF with frozen BERT-base-cased [2], BioBERT [3],
+and PubMedBERT [4] features. The encoders use final-layer mean pooling,
+excluding padding and special tokens, with a 192-token limit. We fit feature
+preprocessing only on each labeled training subset. Class-balanced logistic regression
+(LR), plus a TF-IDF linear SVM, select $C\in\{0.1,1,10\}$ on validation macro-F1.
+\section{Current Progress and Verified Pilot Results}
+The Python pipeline, embedding caches, pinned model revisions, split manifests,
+prediction files, and automatic figures are implemented. All five methods completed
+10/25/50/100 examples per class and the full pilot training pool with three sampling
+seeds: 75 evaluations in total. Integrity checks confirm shared training IDs and
+recompute metrics from saved predictions.
+\begin{center}
+\small
+\begin{tabular}{lcc}
+\toprule
+Method & 100/class: macro-F1 (\%) & Full pool: macro-F1 (\%)\\
+\midrule
+TF-IDF + LR & $59.1\pm0.8$ & 81.7 \\
+TF-IDF + SVM & $59.0\pm0.8$ & 84.3 \\
+BERT + LR & $64.4\pm1.3$ & 77.7 \\
+BioBERT + LR & $67.8\pm1.1$ & 80.4 \\
+PubMedBERT + LR & $65.8\pm1.7$ & 82.6 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\vspace{-6pt}
+{\small Values at 100/class are mean $\pm$ sample SD over three training subsets on
+one fixed test set. Full pool means 1,500 training sentences with natural imbalance;
+its repetitions are deterministic. All runs also use 400 labeled validation sentences,
+so the budgets count training labels only.}
+
+The pilot suggests that the relative benefit depends on the training setting.
+The full-pool comparison also changes class composition, so its difference from
+balanced-budget runs is not a pure sample-size effect. These preliminary results
+measure cue detection and do not demonstrate clinical understanding.
+\section{Challenges and Next Steps}
+Explicit cue words may permit lexical shortcuts. Mixed cues, class imbalance,
+scope ambiguity, and possible overlap with biomedical pretraining text limit interpretation.
+Exact duplicate removal does not guarantee removal of all near-duplicate templates.
+Next we will run the uncapped corpus, retain mixed labels in a multilabel task,
+and analyze errors by cue family. Ten authored minimal pairs support qualitative
+diagnostics only. Disease-held-out tests and target pooling need suitable annotated
+targets. We will preserve document and template separation for those extensions.
+\vspace{3pt}
+\hrule
+\vspace{3pt}
+{\fontsize{8}{9}\selectfont
+[1] Vincze et al., BioScope, \emph{BMC Bioinformatics}, 2008,
+\href{https://doi.org/10.1186/1471-2105-9-S11-S9}{doi:10.1186/1471-2105-9-S11-S9}.
+[2] Devlin et al., BERT, NAACL 2019.
+[3] Lee et al., BioBERT, \emph{Bioinformatics}, 2020.
+[4] Gu et al., Domain-Specific Language Model Pretraining, \emph{ACM TCH}, 2021.
+Code authored with Codex assistance; group review and course-policy compliance remain
+the authors' responsibility.}
+\end{document}

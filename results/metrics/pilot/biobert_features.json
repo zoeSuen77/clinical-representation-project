@@ -1,0 +1,19 @@
+{
+  "model": {
+    "repo_id": "dmis-lab/biobert-base-cased-v1.2",
+    "revision": "67c9c25b46986521ca33df05d8540da1210b3256",
+    "display_name": "BioBERT v1.2"
+  },
+  "max_length": 192,
+  "pooling": "last_hidden_state; mean over attended, non-special tokens",
+  "transformers": "4.57.6",
+  "torch": "2.11.0",
+  "fingerprint": "c807d1321acec17317011d93643d060481cf4e91b427eb2e9e49b2d27c22b4db",
+  "cache_path": "data/cache/biobert_c807d1321acec1731701.npz",
+  "device": "cpu",
+  "n_rows": 2500,
+  "dimensions": 768,
+  "truncated_sentences": 2,
+  "seconds": 31.16346541699022,
+  "model_frozen": true
+}

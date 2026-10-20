@@ -1,0 +1,19 @@
+{
+  "model": {
+    "repo_id": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+    "revision": "e1354b7a3a09615f6aba48dfad4b7a613eef7062",
+    "display_name": "PubMedBERT / BiomedBERT"
+  },
+  "max_length": 192,
+  "pooling": "last_hidden_state; mean over attended, non-special tokens",
+  "transformers": "4.57.6",
+  "torch": "2.11.0",
+  "fingerprint": "25eb0a4ed4f76944e7d84d1033450f674a760041d6c4deac15098902a332ccef",
+  "cache_path": "data/cache/pubmedbert_25eb0a4ed4f76944e7d8.npz",
+  "device": "cpu",
+  "n_rows": 2500,
+  "dimensions": 768,
+  "truncated_sentences": 1,
+  "seconds": 24.628683833172545,
+  "model_frozen": true
+}

@@ -1,0 +1,15 @@
+{
+  "status": "SYNTHETIC DEMONSTRATION ONLY. Authored examples, not clinician-validated benchmark labels. Never included in training or hyperparameter selection.",
+  "pairs": [
+    {"id":"negation_1","category":"negation","relation":"meaning_change","a":"The patient has pneumonia.","b":"The patient has no pneumonia."},
+    {"id":"uncertainty_1","category":"uncertainty","relation":"meaning_change","a":"The patient has pneumonia.","b":"The patient may have pneumonia."},
+    {"id":"negation_2","category":"negation","relation":"meaning_change","a":"The patient reports chest pain.","b":"The patient denies chest pain."},
+    {"id":"uncertainty_2","category":"uncertainty","relation":"meaning_change","a":"Pneumonia is present.","b":"Pneumonia is suspected."},
+    {"id":"abbreviation_1","category":"abbreviation","relation":"intended_preserve","a":"The patient has hypertension.","b":"The patient has HTN."},
+    {"id":"abbreviation_2","category":"abbreviation","relation":"intended_preserve","a":"There is no evidence of myocardial infarction.","b":"There is no evidence of MI."},
+    {"id":"paraphrase_1","category":"paraphrase","relation":"intended_preserve","a":"The patient has no pneumonia.","b":"There is no evidence of pneumonia."},
+    {"id":"paraphrase_2","category":"paraphrase","relation":"intended_preserve","a":"The patient may have pneumonia.","b":"Pneumonia is possible."},
+    {"id":"scope_1","category":"scope","relation":"target_meaning_change","target":"pneumonia","a":"The patient has diabetes but no pneumonia.","b":"The patient has pneumonia but no diabetes."},
+    {"id":"scope_2","category":"scope","relation":"target_meaning_change","target":"chest pain","a":"The patient denies chest pain.","b":"The patient does not deny having chest pain."}
+  ]
+}

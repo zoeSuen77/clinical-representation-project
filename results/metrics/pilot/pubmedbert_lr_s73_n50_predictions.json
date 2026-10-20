@@ -1,0 +1,3002 @@
+[
+  {
+    "id": "1984449:S1.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1990263:S6.8",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "2006423:S14.7",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "2006423:S14.8",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "2011512:S19.1",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "2011512:S19.3",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "2011512:S19.5",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1850841:S25.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1850841:S25.3",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1850841:S25.4",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "1851743:S28.3",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "1851743:S28.5",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "1851743:S28.9",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1851743:S28.10",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1851858:S31.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1851858:S31.3",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1851858:S31.5",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1851861:S32.7",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "2050125:S38.5",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "2050125:S38.8",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "2050125:S38.10",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "2050125:S38.11",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1676597:S42.2",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1676597:S42.4",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1676597:S42.6",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "1676597:S42.7",
+    "true": "speculation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "1676597:S42.8",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "1676597:S42.9",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1676597:S42.10",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "2072454:S47.4",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "2072454:S47.5",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1907460:S49.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1907460:S49.4",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1907460:S49.5",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1907460:S49.9",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1889142:S59.4",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "1889142:S59.7",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "1889142:S59.8",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "1896645:S64.3",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1896645:S64.5",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "1911548:S65.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1911548:S65.3",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1911548:S65.6",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1911548:S65.9",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "1914170:S66.6",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1655897:S68.5",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1655897:S68.7",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "1655897:S68.8",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1930693:S72.1",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1930693:S72.4",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "1930693:S72.11",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1931834:S73.8",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "1931834:S73.12",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1751404:S87.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1751404:S87.4",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1765275:S93.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1765275:S93.6",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "1765275:S93.8",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "1773463:S97.1",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1773463:S97.3",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1773463:S97.4",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1734865:S98.4",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1531412:S104.3",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1312543:S116.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1312543:S116.3",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "1312543:S116.4",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "1313226:S119.10",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1313226:S119.11",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1807404:S124.5",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1314139:S125.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1314139:S125.6",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1533441:S129.4",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1533441:S129.7",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1533441:S129.8",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1315834:S130.3",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1583734:S133.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1375324:S136.6",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "1375324:S136.9",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1351090:S137.8",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "1351090:S137.13",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1380242:S153.5",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1380242:S153.7",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1505523:S154.10",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1516825:S158.6",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1516825:S158.7",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1516825:S158.10",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1404124:S167.3",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1404124:S167.4",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1406939:S170.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1406939:S170.6",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1406939:S170.7",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1419905:S173.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1419905:S173.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1429562:S176.4",
+    "true": "speculation_only",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1429562:S176.7",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1429562:S176.8",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "1434944:S178.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1434944:S178.4",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "1434944:S178.8",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "1448931:S183.5",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1448931:S183.11",
+    "true": "speculation_only",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1453013:S184.1",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1453013:S184.3",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1453013:S184.5",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1335357:S191.7",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8423993:S201.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8423993:S201.5",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8423993:S201.6",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8428966:S212.3",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8428966:S212.4",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8428966:S212.5",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8441377:S216.6",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8441377:S216.8",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8443122:S218.1",
+    "true": "speculation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8443122:S218.3",
+    "true": "speculation_only",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8443122:S218.6",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8383677:S225.3",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8462662:S235.4",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8462662:S235.5",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8462662:S235.8",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8386664:S244.5",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8386664:S244.9",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8386664:S244.10",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8386664:S244.11",
+    "true": "negation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8386664:S244.12",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8386933:S247.9",
+    "true": "negation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8386933:S247.10",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8386933:S247.12",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7683316:S249.8",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7683316:S249.9",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8491377:S253.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8491377:S253.4",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8491377:S253.5",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8496188:S257.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8496188:S257.3",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8496188:S257.6",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8496188:S257.8",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8496188:S257.9",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8388998:S262.9",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8388998:S262.12",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8505847:S267.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8505847:S267.3",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8505847:S267.5",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8505847:S267.7",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8505847:S267.10",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8511519:S273.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8511519:S273.3",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8513868:S274.10",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8513868:S274.12",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8325950:S283.3",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8325950:S283.11",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8332492:S288.3",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8332492:S288.8",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "7692906:S295.6",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "7692906:S295.7",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "7692906:S295.9",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "7692906:S295.10",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "7692906:S295.11",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "7505113:S300.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7505113:S300.3",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7505113:S300.7",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7505113:S300.8",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8289813:S310.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8289813:S310.4",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8112299:S319.1",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8112299:S319.4",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8175894:S325.1",
+    "true": "negation_only",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8175894:S325.3",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8186461:S326.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7981444:S335.3",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "7981444:S335.5",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "7981444:S335.7",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7981444:S335.11",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "7894340:S340.3",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7894340:S340.6",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "7894340:S340.8",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7894340:S340.9",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "7587061:S341.1",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "7587061:S341.6",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "7587061:S341.7",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8556392:S342.3",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8556392:S342.4",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8556392:S342.6",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8596017:S343.5",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8659190:S349.2",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8659190:S349.5",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8683106:S353.3",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8683106:S353.8",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8683106:S353.12",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8683110:S354.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8683110:S354.4",
+    "true": "negation_only",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8683110:S354.7",
+    "true": "negation_only",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8683110:S354.10",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8663380:S361.4",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8699118:S363.3",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8699118:S363.6",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8759721:S370.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8759721:S370.4",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8670897:S374.5",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8670897:S374.11",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8757603:S379.6",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8757603:S379.8",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8741664:S380.4",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8702838:S385.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8764027:S388.3",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8764027:S388.10",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8769650:S390.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8769650:S390.6",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8790376:S394.2",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8790376:S394.5",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8794888:S395.4",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8794888:S395.6",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8801163:S396.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8824287:S412.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8824287:S412.7",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8824287:S412.8",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8839864:S415.1",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8839864:S415.5",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8863162:S419.3",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8863162:S419.4",
+    "true": "speculation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8863162:S419.6",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8863162:S419.7",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8874184:S427.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8874184:S427.4",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8874184:S427.9",
+    "true": "speculation_only",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8874184:S427.10",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8874184:S427.11",
+    "true": "speculation_only",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8887687:S431.3",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8892903:S437.3",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8892903:S437.8",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8898960:S443.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8898960:S443.5",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8898960:S443.7",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8910360:S449.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8910360:S449.8",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8910360:S449.10",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8875942:S459.5",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8875942:S459.6",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8922474:S460.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8922474:S460.4",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8922474:S460.5",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8922474:S460.8",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8922474:S460.9",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8943389:S468.9",
+    "true": "speculation_only",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8955173:S474.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8955173:S474.5",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8955173:S474.7",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8955173:S474.8",
+    "true": "speculation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8955173:S474.11",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8955094:S477.3",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8955094:S477.7",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8955094:S477.10",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8959239:S478.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8959239:S478.5",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8959239:S478.6",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8986719:S491.1",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8986719:S491.4",
+    "true": "negation_only",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9000136:S492.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9000136:S492.6",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9467376:S499.7",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "10029589:S505.3",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10029589:S505.8",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10068671:S511.2",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "10068671:S511.5",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10069412:S512.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10069412:S512.3",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "10069428:S513.4",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10069428:S513.9",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "10069428:S513.10",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "10075645:S516.5",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10075645:S516.10",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "10080532:S518.1",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "10080532:S518.8",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "10080532:S518.9",
+    "true": "speculation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "10080532:S518.10",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "10082134:S521.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10082134:S521.7",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10082134:S521.10",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10092076:S529.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10092076:S529.5",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10092076:S529.6",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10092091:S530.3",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "10092091:S530.5",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10092091:S530.8",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10092091:S530.10",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10096561:S535.3",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10096561:S535.4",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "10096561:S535.5",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "10101001:S536.4",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10101001:S536.6",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10101001:S536.10",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "10194443:S542.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10194443:S542.6",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10194443:S542.10",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "10202937:S551.5",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "10226884:S565.2",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "10226884:S565.8",
+    "true": "speculation_only",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10228008:S566.3",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10228008:S566.4",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10228008:S566.6",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10228008:S566.9",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10229841:S572.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10229841:S572.3",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10229841:S572.7",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "10229841:S572.8",
+    "true": "speculation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "10233879:S575.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10233879:S575.5",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10233882:S576.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10233882:S576.5",
+    "true": "speculation_only",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10233882:S576.6",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "10329958:S587.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10329958:S587.6",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10330189:S588.2",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "10330189:S588.7",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "10330189:S588.9",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "10347175:S592.5",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "10347175:S592.8",
+    "true": "negation_only",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10347175:S592.10",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "10358154:S597.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10358154:S597.4",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10358154:S597.7",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "10358154:S597.9",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10358154:S597.11",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "10358173:S598.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10358173:S598.3",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "10358173:S598.7",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "10358173:S598.8",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "10381501:S609.3",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "10381501:S609.5",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "10395652:S614.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10395652:S614.4",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10409763:S618.1",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "10409763:S618.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10409763:S618.6",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10409763:S618.8",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "10411003:S619.5",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10411003:S619.7",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "10430922:S631.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10430922:S631.2",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "10430922:S631.6",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "10430922:S631.8",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "10437913:S633.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10437913:S633.2",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "10438457:S634.1",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "10438457:S634.3",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "10438457:S634.4",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "10446999:S639.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10446999:S639.6",
+    "true": "speculation_only",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10480426:S646.3",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "10485906:S648.7",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "10485906:S648.11",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "10487715:S649.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10487715:S649.7",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "10487715:S649.8",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "10487715:S649.11",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "10487715:S649.12",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "10487715:S649.14",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "1972889:S654.3",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "1972889:S654.6",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "2083253:S656.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "2234062:S678.5",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "2304473:S684.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "2314899:S685.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "2314899:S685.9",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "2314899:S685.10",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "2314899:S685.12",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "2406568:S687.3",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "2406568:S687.8",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7478534:S689.8",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7486667:S693.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7486667:S693.4",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "7486667:S693.7",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "7510691:S700.1",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "7510691:S700.6",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "7510691:S700.7",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "7520093:S704.7",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7520093:S704.9",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "7520093:S704.10",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "7537762:S715.5",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7589085:S733.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7589085:S733.2",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "7589085:S733.5",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "7609053:S741.7",
+    "true": "negation_only",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7609053:S741.9",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "7609053:S741.11",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "7622191:S742.5",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "7622191:S742.8",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "7747440:S774.4",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7747440:S774.6",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "7747440:S774.7",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7747440:S774.13",
+    "true": "speculation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "7760807:S780.4",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7760807:S780.5",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "7760807:S780.11",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7760807:S780.12",
+    "true": "negation_only",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7788861:S783.7",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7788861:S783.10",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "7823943:S786.1",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "7823943:S786.6",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "7843230:S789.5",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "7843230:S789.7",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "7843230:S789.9",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7843230:S789.10",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "7843230:S789.12",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "7853483:S794.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7853483:S794.7",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "7853483:S794.9",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "7853483:S794.12",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "7858491:S795.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7858491:S795.3",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7858491:S795.6",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "7858491:S795.7",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "7869038:S802.1",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "7869038:S802.4",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7869038:S802.8",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "7869038:S802.9",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7882168:S804.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7882168:S804.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7882168:S804.6",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7882168:S804.7",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "7917514:S814.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7917514:S814.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7923175:S816.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7923175:S816.2",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "7923175:S816.5",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "7923175:S816.7",
+    "true": "negation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "7961690:S826.9",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "7964483:S827.2",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "7964483:S827.5",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "7964483:S827.7",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "7964616:S829.9",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "7986199:S835.1",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8051172:S842.2",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8051172:S842.4",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8051172:S842.7",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8051172:S842.9",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8051172:S842.10",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8067997:S847.3",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8164652:S863.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8164652:S863.3",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8164652:S863.10",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8175775:S865.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8175775:S865.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8175775:S865.3",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8175775:S865.5",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8179594:S866.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8179594:S866.6",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8196620:S872.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8196620:S872.5",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8605359:S891.4",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8605359:S891.5",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8605359:S891.6",
+    "true": "negation_only",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8605359:S891.9",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8605359:S891.10",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8617207:S895.6",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8617207:S895.8",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8621480:S898.4",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8628295:S910.3",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8642282:S920.3",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8642282:S920.4",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8642282:S920.7",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8645086:S921.3",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8645086:S921.4",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8645086:S921.7",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "8645254:S922.6",
+    "true": "speculation_only",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8645254:S922.7",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8645254:S922.10",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8652841:S925.2",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8662666:S928.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8662666:S928.6",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8662666:S928.8",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8662666:S928.11",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8707445:S941.10",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8725939:S943.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "8797708:S949.1",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8797708:S949.2",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8797708:S949.7",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8797708:S949.8",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8797708:S949.9",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "8797708:S949.11",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9015187:S963.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9015187:S963.2",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9015187:S963.4",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9015187:S963.8",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9032466:S973.6",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9032466:S973.8",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9032466:S973.9",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9032466:S973.10",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9047238:S976.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9047238:S976.5",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9057086:S981.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9057086:S981.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9065737:S984.3",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9065737:S984.4",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9065737:S984.5",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9065737:S984.6",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9065737:S984.7",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9115394:S1000.3",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9115394:S1000.5",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9115394:S1000.7",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9159166:S1023.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9159166:S1023.8",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9159166:S1023.10",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9160887:S1024.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9160887:S1024.5",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9170401:S1029.5",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9170401:S1029.11",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9170401:S1029.12",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9178107:S1034.1",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9178107:S1034.4",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9185506:S1037.3",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9185506:S1037.9",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9188651:S1039.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9190938:S1042.7",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9190938:S1042.9",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9190938:S1042.10",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9190938:S1042.11",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9199305:S1047.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9199305:S1047.3",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9199305:S1047.5",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9199305:S1047.8",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9199305:S1047.9",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9199305:S1047.11",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9209268:S1051.9",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9209268:S1051.10",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9209268:S1051.11",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9209284:S1052.2",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9209284:S1052.3",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9237716:S1069.5",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9237716:S1069.6",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9237716:S1069.7",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9252117:S1075.2",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9252117:S1075.3",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9252117:S1075.6",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9265727:S1080.1",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9265727:S1080.3",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9265727:S1080.4",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9277499:S1086.11",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9299399:S1090.2",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9299399:S1090.5",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9309306:S1095.3",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9322967:S1103.4",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9341193:S1108.6",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9341193:S1108.9",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9344365:S1113.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9344365:S1113.7",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9344365:S1113.10",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9344365:S1113.12",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9352360:S1117.1",
+    "true": "negation_only",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9374642:S1128.3",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9427533:S1141.2",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9427533:S1141.3",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9427533:S1141.5",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9427533:S1141.7",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9427533:S1141.9",
+    "true": "negation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9440546:S1147.2",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9440546:S1147.3",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9440546:S1147.5",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9440546:S1147.6",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9442374:S1149.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9442374:S1149.2",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9479628:S1156.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9479628:S1156.3",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9479628:S1156.5",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9479628:S1156.7",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9548485:S1159.8",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9686612:S1172.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9686612:S1172.6",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9686612:S1172.9",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9712068:S1181.3",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9712068:S1181.4",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9729045:S1190.3",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9729045:S1190.5",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9763613:S1203.3",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9763613:S1203.4",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9763613:S1203.5",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9794238:S1210.2",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9794238:S1210.4",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9799798:S1215.4",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9799798:S1215.9",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9799798:S1215.11",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9802971:S1216.5",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9834272:S1232.3",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9845517:S1238.6",
+    "true": "speculation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9847292:S1239.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9852211:S1241.4",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9852211:S1241.5",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9852211:S1241.10",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9852211:S1241.11",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9862666:S1246.6",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9882624:S1255.2",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9882624:S1255.4",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9882624:S1255.5",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9882624:S1255.6",
+    "true": "no_cue",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9893043:S1261.1",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9916078:S1264.3",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9916078:S1264.5",
+    "true": "no_cue",
+    "pred": "speculation_only"
+  },
+  {
+    "id": "9952372:S1269.4",
+    "true": "negation_only",
+    "pred": "negation_only"
+  },
+  {
+    "id": "9952372:S1269.7",
+    "true": "no_cue",
+    "pred": "no_cue"
+  },
+  {
+    "id": "9952372:S1269.8",
+    "true": "speculation_only",
+    "pred": "speculation_only"
+  }
+]

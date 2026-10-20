@@ -1,0 +1,17 @@
+{
+  "bert": {
+    "repo_id": "google-bert/bert-base-cased",
+    "revision": "cd5ef92a9fb2f889e972770a36d4ed042daf221e",
+    "display_name": "BERT-base-cased"
+  },
+  "biobert": {
+    "repo_id": "dmis-lab/biobert-base-cased-v1.2",
+    "revision": "67c9c25b46986521ca33df05d8540da1210b3256",
+    "display_name": "BioBERT v1.2"
+  },
+  "pubmedbert": {
+    "repo_id": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+    "revision": "e1354b7a3a09615f6aba48dfad4b7a613eef7062",
+    "display_name": "PubMedBERT / BiomedBERT"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "model": {
+    "repo_id": "google-bert/bert-base-cased",
+    "revision": "cd5ef92a9fb2f889e972770a36d4ed042daf221e",
+    "display_name": "BERT-base-cased"
+  },
+  "max_length": 192,
+  "pooling": "last_hidden_state; mean over attended, non-special tokens",
+  "transformers": "4.57.6",
+  "torch": "2.11.0",
+  "fingerprint": "6fa894580b3377dd7201ff759771d2b4e5c7414776ee282b9911f3fec143ef97",
+  "cache_path": "data/cache/bert_6fa894580b3377dd7201.npz",
+  "device": "cpu",
+  "n_rows": 2500,
+  "dimensions": 768,
+  "truncated_sentences": 2,
+  "seconds": 32.412953125080094,
+  "model_frozen": true
+}

@@ -1,0 +1,13 @@
+{
+  "name": "pilot",
+  "split_seed": 1729,
+  "subset_seed": 2026,
+  "split_caps": {"train": 1500, "validation": 400, "test": 600},
+  "seeds": [13, 37, 73],
+  "budgets_per_class": [10, 25, 50, 100, "full"],
+  "C_grid": [0.1, 1.0, 10.0],
+  "max_length": 192,
+  "batch_size": 16,
+  "pooling": "mean_non_special",
+  "note": "Full means the 1500-sentence pilot training pool, not the entire corpus. One fixed document-group split; seeds vary labeled training subsets."
+}

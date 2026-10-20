@@ -1,0 +1,41 @@
+method,id,category,relation,a,b,cosine_similarity,prediction_a,prediction_b,predictions_agree,target
+tfidf,negation_1,negation,meaning_change,The patient has pneumonia.,The patient has no pneumonia.,0.8465784906978883,no_cue,negation_only,False,
+tfidf,uncertainty_1,uncertainty,meaning_change,The patient has pneumonia.,The patient may have pneumonia.,0.4613418791485967,no_cue,speculation_only,False,
+tfidf,negation_2,negation,meaning_change,The patient reports chest pain.,The patient denies chest pain.,0.6354988072823472,no_cue,no_cue,True,
+tfidf,uncertainty_2,uncertainty,meaning_change,Pneumonia is present.,Pneumonia is suspected.,0.32521360467353394,no_cue,no_cue,True,
+tfidf,abbreviation_1,abbreviation,intended_preserve,The patient has hypertension.,The patient has HTN.,0.730192768944639,no_cue,no_cue,True,
+tfidf,abbreviation_2,abbreviation,intended_preserve,There is no evidence of myocardial infarction.,There is no evidence of MI.,0.9999999999999999,negation_only,negation_only,True,
+tfidf,paraphrase_1,paraphrase,intended_preserve,The patient has no pneumonia.,There is no evidence of pneumonia.,0.20870201495038387,negation_only,negation_only,True,
+tfidf,paraphrase_2,paraphrase,intended_preserve,The patient may have pneumonia.,Pneumonia is possible.,0.0,speculation_only,no_cue,False,
+tfidf,scope_1,scope,target_meaning_change,The patient has diabetes but no pneumonia.,The patient has pneumonia but no diabetes.,1.0,negation_only,negation_only,True,pneumonia
+tfidf,scope_2,scope,target_meaning_change,The patient denies chest pain.,The patient does not deny having chest pain.,0.47469859348062937,no_cue,negation_only,False,chest pain
+bert,negation_1,negation,meaning_change,The patient has pneumonia.,The patient has no pneumonia.,0.9741997718811035,no_cue,no_cue,True,
+bert,uncertainty_1,uncertainty,meaning_change,The patient has pneumonia.,The patient may have pneumonia.,0.9502344131469727,no_cue,speculation_only,False,
+bert,negation_2,negation,meaning_change,The patient reports chest pain.,The patient denies chest pain.,0.972821831703186,no_cue,negation_only,False,
+bert,uncertainty_2,uncertainty,meaning_change,Pneumonia is present.,Pneumonia is suspected.,0.9664405584335327,no_cue,speculation_only,False,
+bert,abbreviation_1,abbreviation,intended_preserve,The patient has hypertension.,The patient has HTN.,0.8471586108207703,no_cue,negation_only,False,
+bert,abbreviation_2,abbreviation,intended_preserve,There is no evidence of myocardial infarction.,There is no evidence of MI.,0.8076825141906738,negation_only,negation_only,True,
+bert,paraphrase_1,paraphrase,intended_preserve,The patient has no pneumonia.,There is no evidence of pneumonia.,0.9116442203521729,no_cue,negation_only,False,
+bert,paraphrase_2,paraphrase,intended_preserve,The patient may have pneumonia.,Pneumonia is possible.,0.8181810975074768,speculation_only,no_cue,False,
+bert,scope_1,scope,target_meaning_change,The patient has diabetes but no pneumonia.,The patient has pneumonia but no diabetes.,0.998292863368988,negation_only,negation_only,True,pneumonia
+bert,scope_2,scope,target_meaning_change,The patient denies chest pain.,The patient does not deny having chest pain.,0.9471560716629028,negation_only,negation_only,True,chest pain
+biobert,negation_1,negation,meaning_change,The patient has pneumonia.,The patient has no pneumonia.,0.9778718948364258,no_cue,negation_only,False,
+biobert,uncertainty_1,uncertainty,meaning_change,The patient has pneumonia.,The patient may have pneumonia.,0.9820993542671204,no_cue,speculation_only,False,
+biobert,negation_2,negation,meaning_change,The patient reports chest pain.,The patient denies chest pain.,0.9848219752311707,no_cue,no_cue,True,
+biobert,uncertainty_2,uncertainty,meaning_change,Pneumonia is present.,Pneumonia is suspected.,0.9698318839073181,no_cue,speculation_only,False,
+biobert,abbreviation_1,abbreviation,intended_preserve,The patient has hypertension.,The patient has HTN.,0.921124279499054,no_cue,no_cue,True,
+biobert,abbreviation_2,abbreviation,intended_preserve,There is no evidence of myocardial infarction.,There is no evidence of MI.,0.9037546515464783,negation_only,negation_only,True,
+biobert,paraphrase_1,paraphrase,intended_preserve,The patient has no pneumonia.,There is no evidence of pneumonia.,0.9367465972900391,negation_only,negation_only,True,
+biobert,paraphrase_2,paraphrase,intended_preserve,The patient may have pneumonia.,Pneumonia is possible.,0.9247694611549377,speculation_only,no_cue,False,
+biobert,scope_1,scope,target_meaning_change,The patient has diabetes but no pneumonia.,The patient has pneumonia but no diabetes.,0.998123824596405,negation_only,negation_only,True,pneumonia
+biobert,scope_2,scope,target_meaning_change,The patient denies chest pain.,The patient does not deny having chest pain.,0.9800823926925659,no_cue,negation_only,False,chest pain
+pubmedbert,negation_1,negation,meaning_change,The patient has pneumonia.,The patient has no pneumonia.,0.992113471031189,no_cue,negation_only,False,
+pubmedbert,uncertainty_1,uncertainty,meaning_change,The patient has pneumonia.,The patient may have pneumonia.,0.9887305498123169,no_cue,speculation_only,False,
+pubmedbert,negation_2,negation,meaning_change,The patient reports chest pain.,The patient denies chest pain.,0.992908775806427,no_cue,no_cue,True,
+pubmedbert,uncertainty_2,uncertainty,meaning_change,Pneumonia is present.,Pneumonia is suspected.,0.9861640334129333,no_cue,no_cue,True,
+pubmedbert,abbreviation_1,abbreviation,intended_preserve,The patient has hypertension.,The patient has HTN.,0.9954351782798767,no_cue,no_cue,True,
+pubmedbert,abbreviation_2,abbreviation,intended_preserve,There is no evidence of myocardial infarction.,There is no evidence of MI.,0.9921988844871521,negation_only,negation_only,True,
+pubmedbert,paraphrase_1,paraphrase,intended_preserve,The patient has no pneumonia.,There is no evidence of pneumonia.,0.9775730967521667,negation_only,negation_only,True,
+pubmedbert,paraphrase_2,paraphrase,intended_preserve,The patient may have pneumonia.,Pneumonia is possible.,0.9789443016052246,speculation_only,no_cue,False,
+pubmedbert,scope_1,scope,target_meaning_change,The patient has diabetes but no pneumonia.,The patient has pneumonia but no diabetes.,0.9987207055091858,negation_only,negation_only,True,pneumonia
+pubmedbert,scope_2,scope,target_meaning_change,The patient denies chest pain.,The patient does not deny having chest pain.,0.9914523959159851,no_cue,negation_only,False,chest pain

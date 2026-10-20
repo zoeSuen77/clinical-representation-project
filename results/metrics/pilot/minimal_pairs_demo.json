@@ -1,0 +1,462 @@
+{
+  "disclosure": "SYNTHETIC DEMONSTRATION ONLY. Authored examples, not clinician-validated benchmark labels. Never included in training or hyperparameter selection.",
+  "interpretation": "Predictions are cue-presence labels. A sentence-level model cannot assign separate statuses to different target diseases. Agreement is descriptive, not target-assertion accuracy. High cosine similarity alone does not show failure to encode negation.",
+  "results": {
+    "tfidf": [
+      {
+        "id": "negation_1",
+        "category": "negation",
+        "relation": "meaning_change",
+        "a": "The patient has pneumonia.",
+        "b": "The patient has no pneumonia.",
+        "cosine_similarity": 0.8465784906978883,
+        "prediction_a": "no_cue",
+        "prediction_b": "negation_only",
+        "predictions_agree": false
+      },
+      {
+        "id": "uncertainty_1",
+        "category": "uncertainty",
+        "relation": "meaning_change",
+        "a": "The patient has pneumonia.",
+        "b": "The patient may have pneumonia.",
+        "cosine_similarity": 0.4613418791485967,
+        "prediction_a": "no_cue",
+        "prediction_b": "speculation_only",
+        "predictions_agree": false
+      },
+      {
+        "id": "negation_2",
+        "category": "negation",
+        "relation": "meaning_change",
+        "a": "The patient reports chest pain.",
+        "b": "The patient denies chest pain.",
+        "cosine_similarity": 0.6354988072823472,
+        "prediction_a": "no_cue",
+        "prediction_b": "no_cue",
+        "predictions_agree": true
+      },
+      {
+        "id": "uncertainty_2",
+        "category": "uncertainty",
+        "relation": "meaning_change",
+        "a": "Pneumonia is present.",
+        "b": "Pneumonia is suspected.",
+        "cosine_similarity": 0.32521360467353394,
+        "prediction_a": "no_cue",
+        "prediction_b": "no_cue",
+        "predictions_agree": true
+      },
+      {
+        "id": "abbreviation_1",
+        "category": "abbreviation",
+        "relation": "intended_preserve",
+        "a": "The patient has hypertension.",
+        "b": "The patient has HTN.",
+        "cosine_similarity": 0.730192768944639,
+        "prediction_a": "no_cue",
+        "prediction_b": "no_cue",
+        "predictions_agree": true
+      },
+      {
+        "id": "abbreviation_2",
+        "category": "abbreviation",
+        "relation": "intended_preserve",
+        "a": "There is no evidence of myocardial infarction.",
+        "b": "There is no evidence of MI.",
+        "cosine_similarity": 0.9999999999999999,
+        "prediction_a": "negation_only",
+        "prediction_b": "negation_only",
+        "predictions_agree": true
+      },
+      {
+        "id": "paraphrase_1",
+        "category": "paraphrase",
+        "relation": "intended_preserve",
+        "a": "The patient has no pneumonia.",
+        "b": "There is no evidence of pneumonia.",
+        "cosine_similarity": 0.20870201495038387,
+        "prediction_a": "negation_only",
+        "prediction_b": "negation_only",
+        "predictions_agree": true
+      },
+      {
+        "id": "paraphrase_2",
+        "category": "paraphrase",
+        "relation": "intended_preserve",
+        "a": "The patient may have pneumonia.",
+        "b": "Pneumonia is possible.",
+        "cosine_similarity": 0.0,
+        "prediction_a": "speculation_only",
+        "prediction_b": "no_cue",
+        "predictions_agree": false
+      },
+      {
+        "id": "scope_1",
+        "category": "scope",
+        "relation": "target_meaning_change",
+        "target": "pneumonia",
+        "a": "The patient has diabetes but no pneumonia.",
+        "b": "The patient has pneumonia but no diabetes.",
+        "cosine_similarity": 1.0,
+        "prediction_a": "negation_only",
+        "prediction_b": "negation_only",
+        "predictions_agree": true
+      },
+      {
+        "id": "scope_2",
+        "category": "scope",
+        "relation": "target_meaning_change",
+        "target": "chest pain",
+        "a": "The patient denies chest pain.",
+        "b": "The patient does not deny having chest pain.",
+        "cosine_similarity": 0.47469859348062937,
+        "prediction_a": "no_cue",
+        "prediction_b": "negation_only",
+        "predictions_agree": false
+      }
+    ],
+    "bert": [
+      {
+        "id": "negation_1",
+        "category": "negation",
+        "relation": "meaning_change",
+        "a": "The patient has pneumonia.",
+        "b": "The patient has no pneumonia.",
+        "cosine_similarity": 0.9741997718811035,
+        "prediction_a": "no_cue",
+        "prediction_b": "no_cue",
+        "predictions_agree": true
+      },
+      {
+        "id": "uncertainty_1",
+        "category": "uncertainty",
+        "relation": "meaning_change",
+        "a": "The patient has pneumonia.",
+        "b": "The patient may have pneumonia.",
+        "cosine_similarity": 0.9502344131469727,
+        "prediction_a": "no_cue",
+        "prediction_b": "speculation_only",
+        "predictions_agree": false
+      },
+      {
+        "id": "negation_2",
+        "category": "negation",
+        "relation": "meaning_change",
+        "a": "The patient reports chest pain.",
+        "b": "The patient denies chest pain.",
+        "cosine_similarity": 0.972821831703186,
+        "prediction_a": "no_cue",
+        "prediction_b": "negation_only",
+        "predictions_agree": false
+      },
+      {
+        "id": "uncertainty_2",
+        "category": "uncertainty",
+        "relation": "meaning_change",
+        "a": "Pneumonia is present.",
+        "b": "Pneumonia is suspected.",
+        "cosine_similarity": 0.9664405584335327,
+        "prediction_a": "no_cue",
+        "prediction_b": "speculation_only",
+        "predictions_agree": false
+      },
+      {
+        "id": "abbreviation_1",
+        "category": "abbreviation",
+        "relation": "intended_preserve",
+        "a": "The patient has hypertension.",
+        "b": "The patient has HTN.",
+        "cosine_similarity": 0.8471586108207703,
+        "prediction_a": "no_cue",
+        "prediction_b": "negation_only",
+        "predictions_agree": false
+      },
+      {
+        "id": "abbreviation_2",
+        "category": "abbreviation",
+        "relation": "intended_preserve",
+        "a": "There is no evidence of myocardial infarction.",
+        "b": "There is no evidence of MI.",
+        "cosine_similarity": 0.8076825141906738,
+        "prediction_a": "negation_only",
+        "prediction_b": "negation_only",
+        "predictions_agree": true
+      },
+      {
+        "id": "paraphrase_1",
+        "category": "paraphrase",
+        "relation": "intended_preserve",
+        "a": "The patient has no pneumonia.",
+        "b": "There is no evidence of pneumonia.",
+        "cosine_similarity": 0.9116442203521729,
+        "prediction_a": "no_cue",
+        "prediction_b": "negation_only",
+        "predictions_agree": false
+      },
+      {
+        "id": "paraphrase_2",
+        "category": "paraphrase",
+        "relation": "intended_preserve",
+        "a": "The patient may have pneumonia.",
+        "b": "Pneumonia is possible.",
+        "cosine_similarity": 0.8181810975074768,
+        "prediction_a": "speculation_only",
+        "prediction_b": "no_cue",
+        "predictions_agree": false
+      },
+      {
+        "id": "scope_1",
+        "category": "scope",
+        "relation": "target_meaning_change",
+        "target": "pneumonia",
+        "a": "The patient has diabetes but no pneumonia.",
+        "b": "The patient has pneumonia but no diabetes.",
+        "cosine_similarity": 0.998292863368988,
+        "prediction_a": "negation_only",
+        "prediction_b": "negation_only",
+        "predictions_agree": true
+      },
+      {
+        "id": "scope_2",
+        "category": "scope",
+        "relation": "target_meaning_change",
+        "target": "chest pain",
+        "a": "The patient denies chest pain.",
+        "b": "The patient does not deny having chest pain.",
+        "cosine_similarity": 0.9471560716629028,
+        "prediction_a": "negation_only",
+        "prediction_b": "negation_only",
+        "predictions_agree": true
+      }
+    ],
+    "biobert": [
+      {
+        "id": "negation_1",
+        "category": "negation",
+        "relation": "meaning_change",
+        "a": "The patient has pneumonia.",
+        "b": "The patient has no pneumonia.",
+        "cosine_similarity": 0.9778718948364258,
+        "prediction_a": "no_cue",
+        "prediction_b": "negation_only",
+        "predictions_agree": false
+      },
+      {
+        "id": "uncertainty_1",
+        "category": "uncertainty",
+        "relation": "meaning_change",
+        "a": "The patient has pneumonia.",
+        "b": "The patient may have pneumonia.",
+        "cosine_similarity": 0.9820993542671204,
+        "prediction_a": "no_cue",
+        "prediction_b": "speculation_only",
+        "predictions_agree": false
+      },
+      {
+        "id": "negation_2",
+        "category": "negation",
+        "relation": "meaning_change",
+        "a": "The patient reports chest pain.",
+        "b": "The patient denies chest pain.",
+        "cosine_similarity": 0.9848219752311707,
+        "prediction_a": "no_cue",
+        "prediction_b": "no_cue",
+        "predictions_agree": true
+      },
+      {
+        "id": "uncertainty_2",
+        "category": "uncertainty",
+        "relation": "meaning_change",
+        "a": "Pneumonia is present.",
+        "b": "Pneumonia is suspected.",
+        "cosine_similarity": 0.9698318839073181,
+        "prediction_a": "no_cue",
+        "prediction_b": "speculation_only",
+        "predictions_agree": false
+      },
+      {
+        "id": "abbreviation_1",
+        "category": "abbreviation",
+        "relation": "intended_preserve",
+        "a": "The patient has hypertension.",
+        "b": "The patient has HTN.",
+        "cosine_similarity": 0.921124279499054,
+        "prediction_a": "no_cue",
+        "prediction_b": "no_cue",
+        "predictions_agree": true
+      },
+      {
+        "id": "abbreviation_2",
+        "category": "abbreviation",
+        "relation": "intended_preserve",
+        "a": "There is no evidence of myocardial infarction.",
+        "b": "There is no evidence of MI.",
+        "cosine_similarity": 0.9037546515464783,
+        "prediction_a": "negation_only",
+        "prediction_b": "negation_only",
+        "predictions_agree": true
+      },
+      {
+        "id": "paraphrase_1",
+        "category": "paraphrase",
+        "relation": "intended_preserve",
+        "a": "The patient has no pneumonia.",
+        "b": "There is no evidence of pneumonia.",
+        "cosine_similarity": 0.9367465972900391,
+        "prediction_a": "negation_only",
+        "prediction_b": "negation_only",
+        "predictions_agree": true
+      },
+      {
+        "id": "paraphrase_2",
+        "category": "paraphrase",
+        "relation": "intended_preserve",
+        "a": "The patient may have pneumonia.",
+        "b": "Pneumonia is possible.",
+        "cosine_similarity": 0.9247694611549377,
+        "prediction_a": "speculation_only",
+        "prediction_b": "no_cue",
+        "predictions_agree": false
+      },
+      {
+        "id": "scope_1",
+        "category": "scope",
+        "relation": "target_meaning_change",
+        "target": "pneumonia",
+        "a": "The patient has diabetes but no pneumonia.",
+        "b": "The patient has pneumonia but no diabetes.",
+        "cosine_similarity": 0.998123824596405,
+        "prediction_a": "negation_only",
+        "prediction_b": "negation_only",
+        "predictions_agree": true
+      },
+      {
+        "id": "scope_2",
+        "category": "scope",
+        "relation": "target_meaning_change",
+        "target": "chest pain",
+        "a": "The patient denies chest pain.",
+        "b": "The patient does not deny having chest pain.",
+        "cosine_similarity": 0.9800823926925659,
+        "prediction_a": "no_cue",
+        "prediction_b": "negation_only",
+        "predictions_agree": false
+      }
+    ],
+    "pubmedbert": [
+      {
+        "id": "negation_1",
+        "category": "negation",
+        "relation": "meaning_change",
+        "a": "The patient has pneumonia.",
+        "b": "The patient has no pneumonia.",
+        "cosine_similarity": 0.992113471031189,
+        "prediction_a": "no_cue",
+        "prediction_b": "negation_only",
+        "predictions_agree": false
+      },
+      {
+        "id": "uncertainty_1",
+        "category": "uncertainty",
+        "relation": "meaning_change",
+        "a": "The patient has pneumonia.",
+        "b": "The patient may have pneumonia.",
+        "cosine_similarity": 0.9887305498123169,
+        "prediction_a": "no_cue",
+        "prediction_b": "speculation_only",
+        "predictions_agree": false
+      },
+      {
+        "id": "negation_2",
+        "category": "negation",
+        "relation": "meaning_change",
+        "a": "The patient reports chest pain.",
+        "b": "The patient denies chest pain.",
+        "cosine_similarity": 0.992908775806427,
+        "prediction_a": "no_cue",
+        "prediction_b": "no_cue",
+        "predictions_agree": true
+      },
+      {
+        "id": "uncertainty_2",
+        "category": "uncertainty",
+        "relation": "meaning_change",
+        "a": "Pneumonia is present.",
+        "b": "Pneumonia is suspected.",
+        "cosine_similarity": 0.9861640334129333,
+        "prediction_a": "no_cue",
+        "prediction_b": "no_cue",
+        "predictions_agree": true
+      },
+      {
+        "id": "abbreviation_1",
+        "category": "abbreviation",
+        "relation": "intended_preserve",
+        "a": "The patient has hypertension.",
+        "b": "The patient has HTN.",
+        "cosine_similarity": 0.9954351782798767,
+        "prediction_a": "no_cue",
+        "prediction_b": "no_cue",
+        "predictions_agree": true
+      },
+      {
+        "id": "abbreviation_2",
+        "category": "abbreviation",
+        "relation": "intended_preserve",
+        "a": "There is no evidence of myocardial infarction.",
+        "b": "There is no evidence of MI.",
+        "cosine_similarity": 0.9921988844871521,
+        "prediction_a": "negation_only",
+        "prediction_b": "negation_only",
+        "predictions_agree": true
+      },
+      {
+        "id": "paraphrase_1",
+        "category": "paraphrase",
+        "relation": "intended_preserve",
+        "a": "The patient has no pneumonia.",
+        "b": "There is no evidence of pneumonia.",
+        "cosine_similarity": 0.9775730967521667,
+        "prediction_a": "negation_only",
+        "prediction_b": "negation_only",
+        "predictions_agree": true
+      },
+      {
+        "id": "paraphrase_2",
+        "category": "paraphrase",
+        "relation": "intended_preserve",
+        "a": "The patient may have pneumonia.",
+        "b": "Pneumonia is possible.",
+        "cosine_similarity": 0.9789443016052246,
+        "prediction_a": "speculation_only",
+        "prediction_b": "no_cue",
+        "predictions_agree": false
+      },
+      {
+        "id": "scope_1",
+        "category": "scope",
+        "relation": "target_meaning_change",
+        "target": "pneumonia",
+        "a": "The patient has diabetes but no pneumonia.",
+        "b": "The patient has pneumonia but no diabetes.",
+        "cosine_similarity": 0.9987207055091858,
+        "prediction_a": "negation_only",
+        "prediction_b": "negation_only",
+        "predictions_agree": true
+      },
+      {
+        "id": "scope_2",
+        "category": "scope",
+        "relation": "target_meaning_change",
+        "target": "chest pain",
+        "a": "The patient denies chest pain.",
+        "b": "The patient does not deny having chest pain.",
+        "cosine_similarity": 0.9914523959159851,
+        "prediction_a": "no_cue",
+        "prediction_b": "negation_only",
+        "predictions_agree": false
+      }
+    ]
+  }
+}

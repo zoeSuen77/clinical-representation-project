@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "evaluations_checked": 75,
+  "methods": [
+    "bert_lr",
+    "biobert_lr",
+    "pubmedbert_lr",
+    "tfidf_lr",
+    "tfidf_svm"
+  ],
+  "shared_training_subsets": 15,
+  "split_counts": {
+    "train": {
+      "speculation_only": 235,
+      "no_cue": 1096,
+      "negation_only": 169
+    },
+    "validation": {
+      "no_cue": 293,
+      "speculation_only": 62,
+      "negation_only": 45
+    },
+    "test": {
+      "no_cue": 439,
+      "speculation_only": 93,
+      "negation_only": 68
+    }
+  },
+  "convergence_warning_count": 0,
+  "checks": [
+    "document-group and exact-duplicate isolation",
+    "identical training IDs across all methods",
+    "test predictions match fixed test IDs",
+    "metrics recomputed from predictions",
+    "C selected only by validation macro-F1"
+  ]
+}

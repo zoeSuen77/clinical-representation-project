@@ -1,0 +1,71 @@
+{
+  "raw_sentences": 11871,
+  "source_documents": 1273,
+  "raw_labels": {
+    "no_cue": 8468,
+    "negation_only": 1302,
+    "both": 295,
+    "speculation_only": 1806
+  },
+  "conflicting_duplicate_rows_removed": 0,
+  "redundant_duplicate_rows_removed": 17,
+  "mixed_label_policy": "Exclude all both-cue sentences from the three-class task.",
+  "retained_sentences": 11559,
+  "retained_labels": {
+    "no_cue": 8452,
+    "negation_only": 1301,
+    "speculation_only": 1806
+  },
+  "retained_document_groups": 1257,
+  "source_url": "https://rgai.inf.u-szeged.hu/sites/rgai.inf.u-szeged.hu/files/abstracts_pmid.xml",
+  "raw_sha256": "ea275d3faf6659b888cf0c04b259e2088fe1e46062aa4d19247ce8cf822e423d",
+  "config": {
+    "name": "pilot",
+    "split_seed": 1729,
+    "subset_seed": 2026,
+    "split_caps": {
+      "train": 1500,
+      "validation": 400,
+      "test": 600
+    },
+    "seeds": [
+      13,
+      37,
+      73
+    ],
+    "budgets_per_class": [
+      10,
+      25,
+      50,
+      100,
+      "full"
+    ],
+    "C_grid": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "max_length": 192,
+    "batch_size": 16,
+    "pooling": "mean_non_special",
+    "note": "Full means the 1500-sentence pilot training pool, not the entire corpus. One fixed document-group split; seeds vary labeled training subsets."
+  },
+  "experiment_counts": {
+    "train": {
+      "speculation_only": 235,
+      "no_cue": 1096,
+      "negation_only": 169
+    },
+    "validation": {
+      "no_cue": 293,
+      "speculation_only": 62,
+      "negation_only": 45
+    },
+    "test": {
+      "no_cue": 439,
+      "speculation_only": 93,
+      "negation_only": 68
+    }
+  },
+  "task": "Sentence-level annotated cue presence, not clinical assertion."
+}
