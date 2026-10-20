@@ -13,6 +13,7 @@ from sklearn.exceptions import ConvergenceWarning
 from src.data_loader import read_jsonl, save_json, sha256_file, training_indices, validate_splits
 from src.classifiers import tune_classifier
 from src.evaluation import evaluate
+from src.protocol import validate_config, methods, config_sha256, check_model_registry
 
 
 def main():
@@ -23,8 +24,12 @@ def main():
     p.add_argument("--embedding-svm", action="store_true")
     p.add_argument("--device", default="auto")
     p.add_argument("--extract-only", action="store_true")
+    p.add_argument("--overwrite", action="store_true",
+                   help="Explicitly rerun selected methods under the same protocol")
     args = p.parse_args()
     config = json.loads(Path(args.config).read_text())
+    validate_config(config)
+    check_model_registry(config, json.loads(Path("configs/models.json").read_text()))
     name = config["name"]
     dataset = Path(f"data/processed/{name}.jsonl")
     rows = read_jsonl(dataset)
@@ -33,11 +38,31 @@ def main():
     val = np.array([i for i, r in enumerate(rows) if r["split"] == "validation"])
     test = np.array([i for i, r in enumerate(rows) if r["split"] == "test"])
     base = Path("results/metrics") / name
+    selected_methods = [(f, c) for f in args.features
+                        for c in (["lr", "svm"] if f == "tfidf" or args.embedding_svm else ["lr"])]
+    if "methods" in config and not set(selected_methods) <= set(methods(config)):
+        raise ValueError("Requested methods are outside the frozen protocol")
+    protocol_path = base / "protocol.json"
+    if protocol_path.exists():
+        previous = json.loads(protocol_path.read_text())
+        if previous["config"] != config or previous["dataset_sha256"] != sha256_file(dataset):
+            raise ValueError("Existing results use different data/config; choose a new experiment name")
+    if not args.extract_only and not args.overwrite:
+        for f, c in selected_methods:
+            if any(base.glob(f"{f}_{c}_s*_n*.json")) or (base / f"{f}_{c}_runs.json").exists():
+                raise FileExistsError(f"Existing {f}/{c} results; use --overwrite to rerun explicitly")
     base.mkdir(parents=True, exist_ok=True)
-    metadata = {"config": config, "dataset_sha256": sha256_file(dataset),
+    metadata = {"config": config, "config_sha256": config_sha256(config),
+                "dataset_sha256": sha256_file(dataset),
                 "python": platform.python_version(), "sklearn": sklearn.__version__,
                 "numpy": np.__version__, "test_n": len(test), "validation_n": len(val)}
-    save_json(base / "protocol.json", metadata)
+    if not protocol_path.exists():
+        save_json(protocol_path, metadata)
+    if not args.extract_only:
+        # Starting a new fit invalidates any prior success receipt for this run.
+        save_json(base / "integrity_audit.json", {
+            "passed": False, "experiment": name, "status": "results_not_yet_audited",
+            "reason": "Run experiments.audit_results after all planned methods finish."})
     for features in args.features:
         if features == "tfidf":
             X = np.array([r["text"] for r in rows])
@@ -52,6 +77,9 @@ def main():
             results, skipped = [], []
             for seed in config["seeds"]:
                 for budget in config["budgets_per_class"]:
+                    if budget == "full" and config.get("full_pool_once", False) \
+                            and seed != config["seeds"][0]:
+                        continue
                     try:
                         train = training_indices(rows, budget, seed)
                     except ValueError as exc:
@@ -81,6 +109,7 @@ def main():
                                for i, pred in zip(test, predictions)])
                     if budget == "full" and seed == config["seeds"][0]:
                         model_path = Path("data/cache") / f"{name}_{features}_{classifier}.joblib"
+                        model_path.parent.mkdir(parents=True, exist_ok=True)
                         joblib.dump(model, model_path)
                     print(f"{name} {features}/{classifier} seed={seed} budget={budget}: "
                           f"F1={result['metrics']['macro_f1']:.4f}", flush=True)

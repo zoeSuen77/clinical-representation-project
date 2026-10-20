@@ -14,7 +14,35 @@ generalization remain research extensions requiring additional labels.
 
 ## Reproduce
 
-Use Python 3.12. All commands below run from this directory. Standard Python:
+### Day 1 final-protocol preparation
+
+The final protocol and data preparation are ready; final model evaluations have
+not been run. See [the fixed protocol](docs/FINAL_PROTOCOL.md) and
+[the Day 1 completion record](docs/DAY1_COMPLETION.md).
+Set up Python and install dependencies using the instructions below first.
+
+```bash
+python -m experiments.prepare_data --config configs/final_main.json
+python -m experiments.preflight --config configs/final_main.json
+python -m pytest -q
+```
+
+This split has 6,939 training, 400 validation, and 2,308 test sentences.
+Its 65 planned evaluations use conservative near-duplicate document grouping,
+four balanced budgets with three seeds, and one full-pool fit per method.
+Preflight success does not mean training or test evaluation has completed.
+
+For subsequent training, use `--config configs/final_main.json` with the
+experiment runner, then run `python -m experiments.audit_results --config configs/final_main.json`
+and `python -m src.visualization --name final_main`.
+The audit rejects an incomplete matrix. Existing method results are protected;
+use `--overwrite` only for an intentional rerun of the same protocol. Changes
+to the dataset or protocol require a new experiment name. Optional methods
+must also be listed in the config's `methods` field for a complete audit.
+
+### Reproduce the original pilot
+
+Use Python 3.12. All commands run from this directory. Standard Python:
 
 ```bash
 python3.12 -m venv .venv

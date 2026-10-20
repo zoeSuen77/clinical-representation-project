@@ -5,6 +5,7 @@ import urllib.request
 from pathlib import Path
 from src.data_loader import (parse_bioscope, clean_and_group, construct_splits,
                              validate_splits, save_json, write_jsonl, sha256_file)
+from src.protocol import validate_config
 
 URL = "https://rgai.inf.u-szeged.hu/sites/rgai.inf.u-szeged.hu/files/abstracts_pmid.xml"
 
@@ -15,19 +16,32 @@ def main():
     p.add_argument("--xml", default="data/raw/abstracts_pmid.xml")
     args = p.parse_args()
     config = json.loads(Path(args.config).read_text())
+    validate_config(config)
     path = Path(args.xml)
     if not path.exists():
         path.parent.mkdir(parents=True, exist_ok=True)
         with urllib.request.urlopen(URL, timeout=60) as response:
             path.write_bytes(response.read())
+    source_hash = sha256_file(path)
+    if config.get("expected_raw_sha256", source_hash) != source_hash:
+        raise ValueError("Raw source checksum differs from frozen protocol")
     raw = parse_bioscope(path)
     cleaned, audit = clean_and_group(raw)
+    if config.get("near_duplicates"):
+        from src.duplicate_audit import group_near_duplicates
+        cleaned, near_audit = group_near_duplicates(cleaned, config["near_duplicates"])
+        audit["near_duplicates"] = near_audit
     rows = construct_splits(cleaned, config)
-    audit.update(source_url=URL, raw_sha256=sha256_file(path), config=config,
+    audit.update(source_url=URL, raw_sha256=source_hash, config=config,
                  experiment_counts=validate_splits(rows),
+                 split_document_counts={s: len({r["doc_id"] for r in rows if r["split"] == s})
+                                        for s in ("train", "validation", "test")},
+                 split_group_counts={s: len({r["group_id"] for r in rows if r["split"] == s})
+                                     for s in ("train", "validation", "test")},
                  task="Sentence-level annotated cue presence, not clinical assertion.")
     write_jsonl("data/processed/all_annotations.jsonl", raw)
     write_jsonl(f"data/processed/{config['name']}.jsonl", rows)
+    audit["prepared_dataset_sha256"] = sha256_file(f"data/processed/{config['name']}.jsonl")
     # A manifest contains no article text and allows independent split auditing.
     save_json(f"data/processed/{config['name']}_manifest.json",
               [{k: r[k] for k in ["id", "doc_id", "group_id", "label", "split"]} for r in rows])

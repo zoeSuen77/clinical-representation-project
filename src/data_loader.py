@@ -152,13 +152,16 @@ def construct_splits(rows, config):
 
 
 def validate_splits(rows):
-    seen_doc, seen_text, seen_id = {}, {}, set()
+    seen_doc, seen_group, seen_text, seen_id = {}, {}, {}, set()
     counts = defaultdict(Counter)
     for r in rows:
+        if r["split"] not in {"train", "validation", "test"} or r["label"] not in LABELS:
+            raise ValueError("Unknown split or class label")
         if r["id"] in seen_id:
             raise ValueError("Duplicate ID in experiment data")
         seen_id.add(r["id"])
-        for registry, value in [(seen_doc, r["group_id"]),
+        for registry, value in [(seen_doc, r["doc_id"]),
+                                 (seen_group, r["group_id"]),
                                  (seen_text, normalize_text(r["text"]))]:
             if value in registry and registry[value] != r["split"]:
                 raise ValueError(f"Cross-split leakage: {value}")

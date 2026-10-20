@@ -1,0 +1,43 @@
+{
+  "name": "final_main",
+  "protocol_version": "2026-10-20-v1",
+  "split_seed": 1729,
+  "subset_seed": 2026,
+  "split_caps": {"validation": 400},
+  "seeds": [13, 37, 73],
+  "budgets_per_class": [10, 25, 50, 100, "full"],
+  "full_pool_once": true,
+  "methods": [
+    {"features": "tfidf", "classifier": "lr"},
+    {"features": "tfidf", "classifier": "svm"},
+    {"features": "bert", "classifier": "lr"},
+    {"features": "biobert", "classifier": "lr"},
+    {"features": "pubmedbert", "classifier": "lr"}
+  ],
+  "C_grid": [0.1, 1.0, 10.0],
+  "max_length": 192,
+  "batch_size": 16,
+  "pooling": "mean_non_special",
+  "expected_raw_sha256": "ea275d3faf6659b888cf0c04b259e2088fe1e46062aa4d19247ce8cf822e423d",
+  "near_duplicates": {
+    "method": "token_shingle_jaccard",
+    "shingle_size": 5,
+    "min_tokens": 8,
+    "threshold": 0.9
+  },
+  "model_revisions": {
+    "bert": {
+      "repo_id": "google-bert/bert-base-cased",
+      "revision": "cd5ef92a9fb2f889e972770a36d4ed042daf221e"
+    },
+    "biobert": {
+      "repo_id": "dmis-lab/biobert-base-cased-v1.2",
+      "revision": "67c9c25b46986521ca33df05d8540da1210b3256"
+    },
+    "pubmedbert": {
+      "repo_id": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+      "revision": "e1354b7a3a09615f6aba48dfad4b7a613eef7062"
+    }
+  },
+  "note": "Exploratory expansion after inspecting pilot results. Training and test are uncapped; validation is capped at 400. Full-pool composition differs from balanced budgets. All encoders remain frozen."
+}

@@ -1,0 +1,163 @@
+{
+  "raw_sentences": 11871,
+  "source_documents": 1273,
+  "raw_labels": {
+    "no_cue": 8468,
+    "negation_only": 1302,
+    "both": 295,
+    "speculation_only": 1806
+  },
+  "conflicting_duplicate_rows_removed": 0,
+  "redundant_duplicate_rows_removed": 17,
+  "mixed_label_policy": "Exclude all both-cue sentences from the three-class task.",
+  "retained_sentences": 11559,
+  "retained_labels": {
+    "no_cue": 8452,
+    "negation_only": 1301,
+    "speculation_only": 1806
+  },
+  "retained_document_groups": 1257,
+  "near_duplicates": {
+    "policy": {
+      "method": "token_shingle_jaccard",
+      "shingle_size": 5,
+      "min_tokens": 8,
+      "threshold": 0.9
+    },
+    "candidate_pairs_scored": 6191,
+    "matching_pairs": 3,
+    "pairs": [
+      {
+        "left_id": "1338726:S248.3",
+        "right_id": "8191547:S327.3",
+        "left_doc_id": "1338726",
+        "right_doc_id": "8191547",
+        "jaccard": 0.9166666666666666
+      },
+      {
+        "left_id": "1338726:S248.4",
+        "right_id": "8191547:S327.4",
+        "left_doc_id": "1338726",
+        "right_doc_id": "8191547",
+        "jaccard": 1.0
+      },
+      {
+        "left_id": "1338726:S248.5",
+        "right_id": "8191547:S327.5",
+        "left_doc_id": "1338726",
+        "right_doc_id": "8191547",
+        "jaccard": 1.0
+      }
+    ],
+    "sentences_below_min_tokens": 105,
+    "groups_before": 1257,
+    "groups_after": 1256,
+    "largest_group_document_count": 7,
+    "scope": "Retained three-class sentences; lexical token overlap only. Short sentences and semantic paraphrases are not fully covered."
+  },
+  "source_url": "https://rgai.inf.u-szeged.hu/sites/rgai.inf.u-szeged.hu/files/abstracts_pmid.xml",
+  "raw_sha256": "ea275d3faf6659b888cf0c04b259e2088fe1e46062aa4d19247ce8cf822e423d",
+  "config": {
+    "name": "final_main",
+    "protocol_version": "2026-10-20-v1",
+    "split_seed": 1729,
+    "subset_seed": 2026,
+    "split_caps": {
+      "validation": 400
+    },
+    "seeds": [
+      13,
+      37,
+      73
+    ],
+    "budgets_per_class": [
+      10,
+      25,
+      50,
+      100,
+      "full"
+    ],
+    "full_pool_once": true,
+    "methods": [
+      {
+        "features": "tfidf",
+        "classifier": "lr"
+      },
+      {
+        "features": "tfidf",
+        "classifier": "svm"
+      },
+      {
+        "features": "bert",
+        "classifier": "lr"
+      },
+      {
+        "features": "biobert",
+        "classifier": "lr"
+      },
+      {
+        "features": "pubmedbert",
+        "classifier": "lr"
+      }
+    ],
+    "C_grid": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "max_length": 192,
+    "batch_size": 16,
+    "pooling": "mean_non_special",
+    "expected_raw_sha256": "ea275d3faf6659b888cf0c04b259e2088fe1e46062aa4d19247ce8cf822e423d",
+    "near_duplicates": {
+      "method": "token_shingle_jaccard",
+      "shingle_size": 5,
+      "min_tokens": 8,
+      "threshold": 0.9
+    },
+    "model_revisions": {
+      "bert": {
+        "repo_id": "google-bert/bert-base-cased",
+        "revision": "cd5ef92a9fb2f889e972770a36d4ed042daf221e"
+      },
+      "biobert": {
+        "repo_id": "dmis-lab/biobert-base-cased-v1.2",
+        "revision": "67c9c25b46986521ca33df05d8540da1210b3256"
+      },
+      "pubmedbert": {
+        "repo_id": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+        "revision": "e1354b7a3a09615f6aba48dfad4b7a613eef7062"
+      }
+    },
+    "note": "Exploratory expansion after inspecting pilot results. Training and test are uncapped; validation is capped at 400. Full-pool composition differs from balanced budgets. All encoders remain frozen."
+  },
+  "experiment_counts": {
+    "train": {
+      "no_cue": 5076,
+      "negation_only": 780,
+      "speculation_only": 1083
+    },
+    "validation": {
+      "speculation_only": 63,
+      "no_cue": 292,
+      "negation_only": 45
+    },
+    "test": {
+      "no_cue": 1686,
+      "negation_only": 260,
+      "speculation_only": 362
+    }
+  },
+  "split_document_counts": {
+    "train": 760,
+    "validation": 204,
+    "test": 256
+  },
+  "split_group_counts": {
+    "train": 754,
+    "validation": 200,
+    "test": 251
+  },
+  "task": "Sentence-level annotated cue presence, not clinical assertion.",
+  "prepared_dataset_sha256": "99d26e5e462297a85ea970df68bc95744ae9b4b04527a8761db50cbc02b4eb8a"
+}

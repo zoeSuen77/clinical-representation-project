@@ -4,7 +4,20 @@ Prepared October 20, 2026 for the CSI 436/536 midterm.
 
 **Group 8 — Yuhan Sun, Zeyu Pan, Jiayu Liao**
 
-## Executed
+## Day 1 update
+
+- Final protocol and `configs/final_main.json` are fixed for the next experiment.
+- Prepared 6,939 train / 400 validation / 2,308 test sentences, with an ID-only
+  split manifest and 13 shared training subsets for 65 planned evaluations.
+- Lexical near-duplicate screening found three pairs across two documents and
+  joined their groups before splitting. This rule does not cover all paraphrases.
+- Generalized audit checks the complete experiment matrix and all saved metrics;
+  the original 75 pilot evaluations pass its stronger checks.
+- Added small-data integration and negative audit tests; 17 tests pass.
+- Final model training has not started. Preflight readiness is not a result.
+- Details: `docs/DAY1_COMPLETION.md`, `docs/FINAL_PROTOCOL.md`, `results/day1/`.
+
+## Executed for the midterm
 
 - Downloaded official BioScope abstracts XML, SHA-256
   `ea275d3faf6659b888cf0c04b259e2088fe1e46062aa4d19247ce8cf822e423d`.

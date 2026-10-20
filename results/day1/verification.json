@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-20",
+  "day1_status": "complete",
+  "tests": {
+    "tests": "17",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "5.948"
+  },
+  "integration_test_scope": "Real TF-IDF LR/SVM fits on synthetic unit-test data in a temporary empty workspace; existing installed dependencies.",
+  "pilot_evaluations_reaudited": 75,
+  "pilot_files_checksum_checked": 174,
+  "pilot_files_changed": [],
+  "unrun_final_audit_rejected": true,
+  "final_model_evaluations_completed": 0,
+  "final_planned_evaluations": 65,
+  "preflight": "results/metrics/final_main/preflight.json",
+  "limitations": [
+    "Not a new dependency-environment or second-machine reproduction.",
+    "No final classifier fitting or final test predictions were generated."
+  ]
+}

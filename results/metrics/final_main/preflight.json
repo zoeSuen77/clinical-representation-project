@@ -1,0 +1,70 @@
+{
+  "status": "ready_for_training",
+  "experiment": "final_main",
+  "config_sha256": "b109ca55d6b6a0fbf93ea5201b6f20af724c5511d45ff171289433740d971ec5",
+  "dataset_sha256": "99d26e5e462297a85ea970df68bc95744ae9b4b04527a8761db50cbc02b4eb8a",
+  "manifest_sha256": "63b535f3777eeec993194efcd566f2ed0fabafdd4beb7f82e3ef80304bf58626",
+  "split_counts": {
+    "train": {
+      "no_cue": 5076,
+      "negation_only": 780,
+      "speculation_only": 1083
+    },
+    "validation": {
+      "speculation_only": 63,
+      "no_cue": 292,
+      "negation_only": 45
+    },
+    "test": {
+      "no_cue": 1686,
+      "negation_only": 260,
+      "speculation_only": 362
+    }
+  },
+  "split_document_counts": {
+    "train": 760,
+    "validation": 204,
+    "test": 256
+  },
+  "split_group_counts": {
+    "train": 754,
+    "validation": 200,
+    "test": 251
+  },
+  "retained_sentences": 11559,
+  "selected_sentences": 9647,
+  "excluded_by_split_caps": 1912,
+  "planned_methods": [
+    "tfidf/lr",
+    "tfidf/svm",
+    "bert/lr",
+    "biobert/lr",
+    "pubmedbert/lr"
+  ],
+  "planned_evaluations": 65,
+  "planned_training_subsets": 13,
+  "model_revisions": {
+    "bert": {
+      "repo_id": "google-bert/bert-base-cased",
+      "revision": "cd5ef92a9fb2f889e972770a36d4ed042daf221e"
+    },
+    "biobert": {
+      "repo_id": "dmis-lab/biobert-base-cased-v1.2",
+      "revision": "67c9c25b46986521ca33df05d8540da1210b3256"
+    },
+    "pubmedbert": {
+      "repo_id": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+      "revision": "e1354b7a3a09615f6aba48dfad4b7a613eef7062"
+    }
+  },
+  "near_duplicate_matching_pairs": 3,
+  "checks": [
+    "all classes present",
+    "no document/group/exact-text cross-split leakage",
+    "budgets feasible",
+    "split manifest agrees with prepared data",
+    "validation size matches config",
+    "model registry matches frozen protocol"
+  ],
+  "claim": "Data and sampling preflight only; no final classifier was fitted or evaluated."
+}
