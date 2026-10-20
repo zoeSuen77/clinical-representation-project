@@ -68,12 +68,16 @@
 python -m experiments.prepare_data --config configs/final_main.json
 python -m experiments.preflight --config configs/final_main.json
 
-# 主实验后续执行；第一天未运行以下模型训练。
-python -m experiments.run_experiments --config configs/final_main.json --features tfidf
-python -m experiments.run_experiments --config configs/final_main.json --features bert biobert pubmedbert --device cpu
+# 默认只打印计划；当前尚未开始正式模型训练。
+python -m experiments.launch_final
+
+# 租好 AutoDL 并通过 CUDA 小样本验证后执行。
+python -m experiments.launch_final --device cuda --execute
 python -m experiments.audit_results --config configs/final_main.json
 python -m src.visualization --name final_main
 ```
+
+本地训练前准备与验证见 `docs/STAGE_REPORT.md`；远程环境、后台会话和恢复规则见 `docs/AUTODL_RUNBOOK.md`。缓存格式更新记录设备与校验和，不改变本协议的任务、模型 revision、数据划分或实验矩阵。
 
 ## 第一版指纹
 

@@ -30,7 +30,7 @@ def check_metrics(saved, expected, location="metrics"):
         require(saved == expected, f"Metric value disagrees: {location}")
 
 
-def audit_results(config, dataset_path, base):
+def audit_results(config, dataset_path, base, *, selected_methods=None):
     validate_config(config)
     dataset_path, base = Path(dataset_path), Path(base)
     rows = read_jsonl(dataset_path)
@@ -44,14 +44,17 @@ def audit_results(config, dataset_path, base):
     require(protocol["validation_n"] == sum(r["split"] == "validation" for r in rows), "Protocol validation count disagrees")
     if config.get("protocol_version"):
         require(protocol.get("config_sha256") == config_sha256(config), "Config checksum differs from saved protocol")
-    expected = expected_matrix(config)
-    expected_files = {f"{f}_{c}_runs.json" for f, c in methods(config)}
+    checked_methods = methods(config) if selected_methods is None else list(selected_methods)
+    require(checked_methods and len(checked_methods) == len(set(checked_methods))
+            and set(checked_methods) <= set(methods(config)), "Invalid audit method selection")
+    expected = {k for k in expected_matrix(config) if k[:2] in checked_methods}
+    expected_files = {f"{f}_{c}_runs.json" for f, c in checked_methods}
     actual_files = {p.name for p in base.glob("*_runs.json")}
-    require(actual_files == expected_files,
+    require(actual_files == expected_files if selected_methods is None else expected_files <= actual_files,
             f"Method files incomplete or unexpected; missing={sorted(expected_files-actual_files)}, extra={sorted(actual_files-expected_files)}")
     subsets = {(s, str(b)): [rows[i]["id"] for i in training_indices(rows, b, s)] for s, b in conditions(config)}
     seen, warnings, method_names = set(), [], []
-    for features, classifier in methods(config):
+    for features, classifier in checked_methods:
         prefix = f"{features}_{classifier}"
         method_names.append(prefix)
         require(json.loads((base / f"{prefix}_skipped.json").read_text()) == [], f"Skipped planned experiments for {prefix}")
@@ -87,7 +90,8 @@ def audit_results(config, dataset_path, base):
                 require(all(meta["model"].get(k) == v for k, v in spec.items()), f"Model revision differs from protocol: {features}")
     require(seen == expected, f"Incomplete experiment matrix: {len(seen)}/{len(expected)}")
     require(not warnings, f"Convergence warnings require resolution: {len(warnings)}")
-    return {"passed": True, "experiment": config["name"], "expected_evaluations": len(expected),
+    return {"passed": True, "experiment": config["name"], "complete_protocol": selected_methods is None,
+            "expected_evaluations": len(expected),
             "evaluations_checked": len(seen), "methods": method_names, "shared_training_subsets": len(subsets),
             "split_counts": counts, "convergence_warning_count": len(warnings),
             "config_sha256": config_sha256(config), "dataset_sha256": sha256_file(dataset_path),

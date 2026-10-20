@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "started_utc": "2026-10-20T20:04:23.018109+00:00",
+  "device": "cpu",
+  "scope": "30 authored synthetic sentences; no BioScope model training.",
+  "synthetic_evaluations": 10,
+  "cache_checks": [
+    {
+      "model": "bert",
+      "shape": [
+        30,
+        768
+      ],
+      "cache_hit": true,
+      "unchanged_checksum": true,
+      "model_frozen": true,
+      "revision": "cd5ef92a9fb2f889e972770a36d4ed042daf221e",
+      "device": "cpu"
+    },
+    {
+      "model": "biobert",
+      "shape": [
+        30,
+        768
+      ],
+      "cache_hit": true,
+      "unchanged_checksum": true,
+      "model_frozen": true,
+      "revision": "67c9c25b46986521ca33df05d8540da1210b3256",
+      "device": "cpu"
+    },
+    {
+      "model": "pubmedbert",
+      "shape": [
+        30,
+        768
+      ],
+      "cache_hit": true,
+      "unchanged_checksum": true,
+      "model_frozen": true,
+      "revision": "e1354b7a3a09615f6aba48dfad4b7a613eef7062",
+      "device": "cpu"
+    }
+  ],
+  "resume_skipped_features": [
+    "tfidf",
+    "bert",
+    "biobert",
+    "pubmedbert"
+  ],
+  "resume_preserved_results": true,
+  "generated_summary": true,
+  "generated_figures": 6,
+  "final_bioscope_evaluations": 0
+}

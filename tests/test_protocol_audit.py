@@ -148,3 +148,51 @@ def test_model_revision_change_is_rejected():
     config = {"model_revisions": {"bert": {"repo_id": "test/model", "revision": "pinned"}}}
     with pytest.raises(ValueError, match="Model registry differs"):
         check_model_registry(config, {"bert": {"repo_id": "test/model", "revision": "changed"}})
+
+
+def test_scoped_audit_is_not_complete_protocol(completed_run):
+    root, config, _, _ = completed_run
+    report = audit_results(config, root / "data/processed/smoke.jsonl", root / "results/metrics/smoke",
+                           selected_methods=[("tfidf", "lr")])
+    assert report["passed"] and report["evaluations_checked"] == 3
+    assert report["complete_protocol"] is False
+
+
+def test_scoped_audit_rejects_partial_group(completed_run, tmp_path):
+    root, config, _, _ = completed_run
+    base = tmp_path / "partial"
+    shutil.copytree(root / "results/metrics/smoke", base)
+    path = base / "tfidf_lr_runs.json"
+    save_json(path, json.loads(path.read_text())[:-1])
+    with pytest.raises(ValueError, match="Incomplete experiment matrix"):
+        audit_results(config, root / "data/processed/smoke.jsonl", base,
+                      selected_methods=[("tfidf", "lr")])
+
+
+def test_default_launcher_only_plans(tmp_path):
+    config = ROOT / "configs/final_main.json"
+    result = subprocess.run([sys.executable, "-m", "experiments.launch_final", "--config", str(config)],
+                            cwd=tmp_path, env={**os.environ, "PYTHONPATH": str(ROOT)},
+                            capture_output=True, text=True)
+    assert result.returncode == 0, result.stderr
+    report = json.loads(result.stdout)
+    assert report["evaluations"] == 65 and report["training_started"] is False
+    assert not list(tmp_path.iterdir())
+
+
+def test_environment_rejects_version_drift(monkeypatch):
+    import importlib.metadata
+    from experiments.check_environment import check_environment
+    original = importlib.metadata.version
+    monkeypatch.setattr(importlib.metadata, "version", lambda k: "0.0.0" if k == "numpy" else original(k))
+    report = check_environment("cpu", ROOT / "requirements-lock.txt")
+    assert not report["passed"]
+    assert any("numpy:" in item for item in report["failures"])
+
+
+def test_explicit_cuda_fails_before_cpu_cache_fallback(monkeypatch):
+    import torch
+    from src.feature_extraction import extract_embeddings
+    monkeypatch.setattr(torch.cuda, "is_available", lambda: False)
+    with pytest.raises(ValueError, match="CUDA requested but unavailable"):
+        extract_embeddings([], "bert", {}, "cuda")

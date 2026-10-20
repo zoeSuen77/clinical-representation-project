@@ -20,11 +20,8 @@ def prepare_training_plan(config, rows):
     return counts, entries
 
 
-def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--config", default="configs/final_main.json")
-    args = parser.parse_args()
-    config = json.loads(Path(args.config).read_text())
+def preflight(config):
+    """Validate and save readiness evidence; never fit a classifier."""
     validate_config(config)
     dataset = Path("data/processed") / f"{config['name']}.jsonl"
     rows = read_jsonl(dataset)
@@ -68,6 +65,14 @@ def main():
         "claim": "Data and sampling preflight only; no final classifier was fitted or evaluated.",
     }
     save_json(base / "preflight.json", report)
+    return report
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--config", default="configs/final_main.json")
+    args = parser.parse_args()
+    report = preflight(json.loads(Path(args.config).read_text()))
     print(json.dumps({k: report[k] for k in ("status", "split_counts", "planned_evaluations")},
                      indent=2))
 

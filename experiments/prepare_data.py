@@ -32,6 +32,11 @@ def main():
         cleaned, near_audit = group_near_duplicates(cleaned, config["near_duplicates"])
         audit["near_duplicates"] = near_audit
     rows = construct_splits(cleaned, config)
+    manifest = [{k: r[k] for k in ["id", "doc_id", "group_id", "label", "split"]} for r in rows]
+    manifest_path = Path(f"data/processed/{config['name']}_manifest.json")
+    if config.get("protocol_version") and manifest_path.exists() \
+            and json.loads(manifest_path.read_text()) != manifest:
+        raise ValueError("Recreated split differs from frozen manifest; use the pinned environment or a new experiment name")
     audit.update(source_url=URL, raw_sha256=source_hash, config=config,
                  experiment_counts=validate_splits(rows),
                  split_document_counts={s: len({r["doc_id"] for r in rows if r["split"] == s})
@@ -43,8 +48,7 @@ def main():
     write_jsonl(f"data/processed/{config['name']}.jsonl", rows)
     audit["prepared_dataset_sha256"] = sha256_file(f"data/processed/{config['name']}.jsonl")
     # A manifest contains no article text and allows independent split auditing.
-    save_json(f"data/processed/{config['name']}_manifest.json",
-              [{k: r[k] for k in ["id", "doc_id", "group_id", "label", "split"]} for r in rows])
+    save_json(manifest_path, manifest)
     save_json(f"results/metrics/{config['name']}_data_audit.json", audit)
     print(json.dumps(audit, indent=2))
 

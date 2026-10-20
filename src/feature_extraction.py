@@ -6,7 +6,7 @@ import random
 import time
 from pathlib import Path
 import numpy as np
-from src.data_loader import save_json
+from src.data_loader import save_json, sha256_file
 
 os.environ.setdefault("HF_HOME", str(Path("data/cache/huggingface").resolve()))
 os.environ.setdefault("HF_HUB_DISABLE_XET", "1")
@@ -51,8 +51,16 @@ def extract_embeddings(rows, key, config, device="auto"):
     import transformers
     from transformers import AutoTokenizer, AutoModel
 
+    if device == "auto":
+        device = ("cuda" if torch.cuda.is_available() else
+                  "mps" if torch.backends.mps.is_available() else "cpu")
+    if device.startswith("cuda") and not torch.cuda.is_available():
+        raise ValueError("CUDA requested but unavailable; check the PyTorch build and driver")
     spec = resolve_spec(key)
     payload = {"model": spec, "max_length": config["max_length"],
+               "cache_schema": 2, "device": device, "batch_size": config["batch_size"],
+               "cuda_runtime": torch.version.cuda if device.startswith("cuda") else None,
+               "gpu_name": torch.cuda.get_device_name(device) if device.startswith("cuda") else None,
                "pooling": "last_hidden_state; mean over attended, non-special tokens",
                "transformers": transformers.__version__, "torch": torch.__version__,
                "rows": [(r["id"], r["text"]) for r in rows]}
@@ -60,18 +68,21 @@ def extract_embeddings(rows, key, config, device="auto"):
     dest = Path("data/cache") / f"{key}_{fingerprint[:20]}.npz"
     metadata_path = dest.with_suffix(".json")
     if dest.exists() and metadata_path.exists():
-        cached = np.load(dest, allow_pickle=False)
-        if cached["ids"].tolist() != [r["id"] for r in rows]:
-            raise ValueError("Cached feature IDs disagree")
-        return cached["embeddings"], json.loads(metadata_path.read_text())
+        metadata = json.loads(metadata_path.read_text())
+        if metadata.get("fingerprint") != fingerprint or metadata.get("cache_sha256") != sha256_file(dest):
+            raise ValueError("Cached feature checksum or fingerprint disagrees")
+        with np.load(dest, allow_pickle=False) as cached:
+            embeddings = cached["embeddings"]
+            if cached["ids"].tolist() != [r["id"] for r in rows]:
+                raise ValueError("Cached feature IDs disagree")
+            if embeddings.shape != (len(rows), metadata["dimensions"]) or not np.isfinite(embeddings).all():
+                raise ValueError("Invalid cached feature dimensions or values")
+        return embeddings, {**metadata, "cache_hit": True}
 
     random.seed(0)
     np.random.seed(0)
     torch.manual_seed(0)
     torch.set_num_threads(min(4, os.cpu_count() or 1))
-    if device == "auto":
-        device = ("cuda" if torch.cuda.is_available() else
-                  "mps" if torch.backends.mps.is_available() else "cpu")
     tokenizer = AutoTokenizer.from_pretrained(spec["repo_id"], revision=spec["revision"])
     model = AutoModel.from_pretrained(spec["repo_id"], revision=spec["revision"])
     model.requires_grad_(False)
@@ -103,6 +114,9 @@ def extract_embeddings(rows, key, config, device="auto"):
                     seconds=time.perf_counter() - started,
                     model_frozen=all(not p.requires_grad for p in model.parameters()))
     dest.parent.mkdir(parents=True, exist_ok=True)
-    np.savez_compressed(dest, embeddings=embeddings, ids=np.array([r["id"] for r in rows]))
+    temporary = dest.with_suffix(".tmp.npz")
+    np.savez_compressed(temporary, embeddings=embeddings, ids=np.array([r["id"] for r in rows]))
+    temporary.replace(dest)
+    metadata.update(cache_sha256=sha256_file(dest), cache_hit=False)
     save_json(metadata_path, metadata)
     return embeddings, metadata

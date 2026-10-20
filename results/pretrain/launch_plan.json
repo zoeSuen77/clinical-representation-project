@@ -1,0 +1,13 @@
+{
+  "mode": "plan_only",
+  "experiment": "final_main",
+  "device": "cuda",
+  "evaluations": 65,
+  "feature_order": [
+    "tfidf",
+    "bert",
+    "biobert",
+    "pubmedbert"
+  ],
+  "training_started": false
+}

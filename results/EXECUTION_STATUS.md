@@ -4,6 +4,20 @@ Prepared October 20, 2026 for the CSI 436/536 midterm.
 
 **Group 8 — Yuhan Sun, Zeyu Pan, Jiayu Liao**
 
+## Preparation before full training
+
+- Completed the local work for phase 1 (days 1–2), including a freshly installed
+  dependency environment, deterministic data reconstruction, and 22 passing tests.
+- Loaded all three pinned encoders on CPU and checked all five methods on 30
+  synthetic sentences: 10 technical evaluations, audited outputs and plots.
+- Verified cache reuse, corrupt-cache rejection, skipping audited groups, and
+  refitting an incomplete synthetic group without changing other groups.
+- Added AutoDL setup and a plan-only-by-default launcher with logging and resume.
+- Full BioScope training remains **0/65**. No AutoDL instance has been connected;
+  Linux/CUDA and network checks await the user's rented instance.
+- Evidence: `results/pretrain/`; report: `docs/STAGE_REPORT.md`; remote instructions:
+  `docs/AUTODL_RUNBOOK.md`.
+
 ## Day 1 update
 
 - Final protocol and `configs/final_main.json` are fixed for the next experiment.

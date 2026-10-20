@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "corrupted_caches_rejected": [
+    "bert",
+    "biobert",
+    "pubmedbert"
+  ],
+  "partial_group_refitted": [
+    "tfidf"
+  ],
+  "validated_groups_skipped": [
+    "bert",
+    "biobert",
+    "pubmedbert"
+  ],
+  "other_results_unchanged": true,
+  "scope": "Synthetic smoke workspace only; no final BioScope classifier fitting."
+}

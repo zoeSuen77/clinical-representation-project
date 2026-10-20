@@ -30,6 +30,9 @@ def main():
     config = json.loads(Path(args.config).read_text())
     validate_config(config)
     check_model_registry(config, json.loads(Path("configs/models.json").read_text()))
+    if config.get("expected_raw_sha256"):
+        from experiments.preflight import preflight
+        preflight(config)
     name = config["name"]
     dataset = Path(f"data/processed/{name}.jsonl")
     rows = read_jsonl(dataset)

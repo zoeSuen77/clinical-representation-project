@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "scope": "New isolated workspace with a freshly installed dependency environment; same source XML and frozen manifest.",
+  "files": {
+    "data/processed/final_main.jsonl": {
+      "sha256": "99d26e5e462297a85ea970df68bc95744ae9b4b04527a8761db50cbc02b4eb8a",
+      "matches": true
+    },
+    "data/processed/final_main_manifest.json": {
+      "sha256": "63b535f3777eeec993194efcd566f2ed0fabafdd4beb7f82e3ef80304bf58626",
+      "matches": true
+    },
+    "results/metrics/final_main/preflight.json": {
+      "sha256": "e13e3dfefb53b6ba9e5fb8be91edd3e72e288f90420ce2196c0269724449a2a0",
+      "matches": true
+    },
+    "results/metrics/final_main/training_plan.json": {
+      "sha256": "086c310b0303ee408f4e39f76ad584a88791935fb680db1d18616108e0e6f412",
+      "matches": true
+    }
+  },
+  "final_models_fitted": false
+}

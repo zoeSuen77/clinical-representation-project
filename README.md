@@ -14,6 +14,30 @@ generalization remain research extensions requiring additional labels.
 
 ## Reproduce
 
+### Ready for AutoDL validation
+
+Local preparation before full training is complete. See the
+[stage report](docs/STAGE_REPORT.md) and [AutoDL runbook](docs/AUTODL_RUNBOOK.md).
+A fresh dependency environment passed 22 tests and a 30-sentence synthetic
+end-to-end check across all five methods. Final BioScope evaluations remain 0/65;
+Linux/CUDA validation is pending the rented instance.
+
+`python -m experiments.launch_final` only prints the plan. After remote checks,
+`--device cuda --execute` runs the experiment; `--resume` audits completed feature
+groups before skipping them and refits incomplete groups. Cache checksums,
+device-specific keys, per-group logs, and a launcher file lock protect the run.
+The runner rechecks the prepared-data fingerprints before final fitting.
+
+For a local technical check after dependency setup:
+
+```bash
+python -m experiments.check_environment --device cpu
+python -m experiments.smoke_models --device cpu --workdir build/new-smoke
+```
+
+The smoke workspace must be new. It uses authored sentences and never trains on
+the final BioScope data. Add `--offline` when all pinned model files are cached.
+
 ### Day 1 final-protocol preparation
 
 The final protocol and data preparation are ready; final model evaluations have
@@ -50,8 +74,10 @@ source .venv/bin/activate
 python -m pip install -r requirements-lock.txt
 python -m experiments.prepare_data --config configs/pilot.json
 python -m pytest -q
-python -m experiments.run_experiments --config configs/pilot.json --features tfidf
-python -m experiments.run_experiments --config configs/pilot.json --features bert biobert pubmedbert
+# The repository includes pilot results; these flags explicitly replace them
+# when intentionally reproducing the pilot in your own checkout.
+python -m experiments.run_experiments --config configs/pilot.json --features tfidf --overwrite
+python -m experiments.run_experiments --config configs/pilot.json --features bert biobert pubmedbert --overwrite
 python -m src.visualization --name pilot
 python -m experiments.minimal_pairs --features tfidf bert biobert pubmedbert
 python -m experiments.audit_results
@@ -74,6 +100,9 @@ python -m experiments.run_experiments --features bert --extract-only
 The first download resolves a model to a commit SHA in `configs/models.json`.
 All later runs use that revision. Cache keys include the ordered text and IDs,
 model revision, library versions, length limit, and pooling method.
+The current cache format also records device, GPU/runtime details and batch size,
+and verifies file checksums. Earlier pilot feature caches are left intact and
+will be recomputed once if the pilot is intentionally rerun with the new code.
 
 For the uncapped corpus run, execute `experiments.prepare_data` and
 `experiments.run_experiments` with `--config configs/full.json`, then

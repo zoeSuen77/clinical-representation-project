@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "experiment": "pilot",
+  "complete_protocol": true,
+  "expected_evaluations": 75,
+  "evaluations_checked": 75,
+  "methods": [
+    "tfidf_lr",
+    "tfidf_svm",
+    "bert_lr",
+    "biobert_lr",
+    "pubmedbert_lr"
+  ],
+  "shared_training_subsets": 15,
+  "split_counts": {
+    "train": {
+      "speculation_only": 235,
+      "no_cue": 1096,
+      "negation_only": 169
+    },
+    "validation": {
+      "no_cue": 293,
+      "speculation_only": 62,
+      "negation_only": 45
+    },
+    "test": {
+      "no_cue": 439,
+      "speculation_only": 93,
+      "negation_only": 68
+    }
+  },
+  "convergence_warning_count": 0,
+  "config_sha256": "e98ed25d1c1c279f271f5d0a4a57a9daa5433656e5599eefd2bed34af8769b75",
+  "dataset_sha256": "5b115232b037a2bdd1bc01eb293161f7904c085f6ae6a1cf6370a8fa4ddd5d11",
+  "checks": [
+    "complete method and seed/budget matrix",
+    "document/group/exact-text split isolation",
+    "training IDs match configured sampling and hashes",
+    "individual and aggregate run records agree",
+    "one prediction per test ID with valid labels",
+    "all metrics and confusion cells recomputed",
+    "complete C grid and first-best validation selection",
+    "frozen encoders and pinned revisions when specified"
+  ],
+  "limits": "Saved records cannot independently prove validation score provenance or that test results never influenced design. Source review and independent reruns remain necessary."
+}
